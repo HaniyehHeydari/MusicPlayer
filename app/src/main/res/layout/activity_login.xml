@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:padding="30dp"
+    android:background="@color/Blue">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="38dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/girl"
+        tools:src="@drawable/girl" />
+
+    <EditText
+        android:id="@+id/editTextText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="46dp"
+        android:focusable="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Enter Name:"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password:"
+        android:layout_below="@id/editTextText1"
+        android:inputType="text"
+        android:focusable="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColorHint="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextText2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:textSize="25dp"
+        android:text="Attempts left:" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextText2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textSize="25dp"
+        android:text="new text"
+        android:layout_alignTop="@id/textView2"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_toEndOf="@id/textView1" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="113dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/textView1"
+        android:textSize="20dp"
+        android:text="Login"
+        android:backgroundTint="@color/blue"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="113dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/textView1"
+        android:textSize="20dp"
+        android:text="cancel"
+        android:backgroundTint="@color/blue"/>
+</RelativeLayout>
+
